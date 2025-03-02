@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+}
+
+.slider {
+    max-width: 100%;
+    /* background-color: aqua; */
+    height: 100vh;
+    background: url(img/guys.jpg) right / 200% no-repeat fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.slider::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0004;
+    backdrop-filter: blur(50px);
+}
+
+.slider .cards {
+    position: absolute;
+    list-style-type: none;
+    padding-inline: 1.6rem;
+    transition: .4s;
+    display: flex;
+    gap: 1.6rem;
+    transition: left 2s cubic-bezier(0.23, 1, 0.320, 1);
+    
+}
+
+.card {
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.card:hover {
+    scale: 1.08;
+    border: 2px solid #ff1133;
+}
+
+.card img {
+    height: 22rem;
+    border-radius: 1rem;
+}
+
+.card div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h1 {
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.card {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
