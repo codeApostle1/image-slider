@@ -8,6 +8,8 @@
 .slider {
     max-width: 100%;
     /* background-color: aqua; */
+
+    
     height: 100vh;
     background: url(img/guys.jpg) right / 200% no-repeat fixed;
     position: relative;
